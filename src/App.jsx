@@ -16,7 +16,7 @@ const App = () => {
         const response = await fetch("https://api.escuelajs.co/api/v1/products");
         const result = await response.json();
         setData(result.slice(0, 20));
-        
+
       } catch (err) {
         console.error(err);
       }
